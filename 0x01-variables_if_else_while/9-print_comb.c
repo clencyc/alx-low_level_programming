@@ -10,11 +10,12 @@
  */
 int main(void)
 {
-int = i;
-for (i = 0; i <= 9; ++i)
+int i;
+i = 0;
+while (i < 10)
 {
-putchar(i)
-}
+putchar(48 + i);
+if (i < 9)
 {
 putchar(',');
 putchar(' ');
