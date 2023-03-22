@@ -1,17 +1,17 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _abs - computes the absolute value of an integer
+ *  int to be checked
+ * Return: absolute value of int
  */
 int _abs(int i)
 {
 if (i >= 0)
 {
-return(i);
+return (i);
 }
 else
 {
-return(i * -1);
+return (i * -1);
 }
 }
