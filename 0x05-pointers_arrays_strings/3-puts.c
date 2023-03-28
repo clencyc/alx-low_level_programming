@@ -1,16 +1,18 @@
-#include "main.h"
+#include <unistd.h>
 
 /**
- * _puts - prints strings
- * @str: function parameter
- * Return: 0
+ * _puts - prints a string, followed by a new line, to stdout.
+ * @str: the string to print.
+ *
+ * Return: void.
  */
-
 void _puts(char *str)
 {
-	int i;
+	int len;
 
-	for (i = 0; str[i] != '\0' ; i++)
-		_putchar(str[i]);
-	_putchar('\n');
+	for (len = 0; str[len] != '\0'; len++)
+		;
+
+	write(STDOUT_FILENO, str, len);
+	write(STDOUT_FILENO, "\n", 1);
 }
