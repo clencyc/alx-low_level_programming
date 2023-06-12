@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
  * factorial - factorial of a number
  * @n: the number we want to find the factorial for
@@ -18,5 +17,6 @@ int factorial(int n)
 	{
 		return (1);
 	}
-	return (n * factorial(n - 1));
+	else
+		return (n * factorial(n - 1));
 }
